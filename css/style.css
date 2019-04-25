@@ -1,8 +1,10 @@
 /* GENERAL STYLES */
 
 :root {
-    --primary-color: rgba(0, 0, 0, 0.75);
+    --primary-color: rgba(31, 30, 30, 0.75);
+    --secondary-color: #eece1a;
     --overlay-color: rgba(24, 32, 39, 0.85);
+    --text-color: #fff;
     --menu-speed: 0.75s;
 }
 
@@ -15,7 +17,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background: #333;
-    color: #fff;
+    color: var(--text-color);
     line-height: 1.6;
     height: 100vh;
     overflow: hidden;
@@ -55,23 +57,90 @@ section h1 {
     font-size: 4rem;
 }
 
+section h2 {
+    font-size: 3rem;
+}
+
 section p {
     font-size: 1.5rem;
 }
 
+#home .wrapper h1 > span {
+    color: var(--secondary-color);
+}
+
+/* Buttons */
+
+.btn {
+    border: 2px solid transparent;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn.check-work {
+    border-color: var(--text-color);
+    color: var(--text-color);
+    width: 30%;
+    margin: 3.75em auto 0 auto;
+    font-size: 1em;
+    padding: 1rem 0;
+    transition: color 0.5s ease-in-out;
+}
+
+.btn.check-work:hover {
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: #333;
+    transition: color 0.5s ease-in-out;
+    
+}
+
 /* Section Images */
 section#home {
-    background: url('https://source.unsplash.com/dC6Pb2JdAqs/1600x900') no-repeat center center/cover;;
-  }
-  
-  section#about {
-    background: url('https://source.unsplash.com/iIJrUoeRoCQ/1600x900') no-repeat center center/cover;;
-  }
-  
-  section#service {
-    background: url('https://source.unsplash.com/B3l0g6HLxr8/1600x900') no-repeat center center/cover;;
-  }
-  
-  section#contact {
-    background: url('https://source.unsplash.com/tMI2_-r5Nfo/1600x900') no-repeat center center/cover;;
-  }
+    background: url('https://source.unsplash.com/B3l0g6HLxr8/1600x900') no-repeat center center/cover;
+}
+
+section#about {
+    background: url('https://source.unsplash.com/iIJrUoeRoCQ/1600x900') no-repeat center center/cover;
+}
+
+section#service {
+    background: url('https://source.unsplash.com/dC6Pb2JdAqs/1600x900') no-repeat center center/cover;
+}
+
+section#contact {
+    background: url('https://source.unsplash.com/tMI2_-r5Nfo/1600x900') no-repeat center center/cover;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 680px) {
+    #home .check-work {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section h1 {
+        font-size: 2rem;
+    }
+    
+    section h2 {
+        font-size: 1.5rem;
+    }
+    
+    section p {
+        font-size: 0.8rem;
+    }
+
+    #home .check-work {
+        width: 65%;
+    }
+    section#home {
+        background: url('https://source.unsplash.com/B3l0g6HLxr8/800x500') no-repeat center center/cover;
+    }
+
+}
