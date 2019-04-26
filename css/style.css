@@ -109,6 +109,12 @@ section p {
 
 .contact-info a {
     color: var(--text-color);
+    transition: color 0.5s ease-in-out;
+}
+
+.contact-info a:hover {
+    color: var(--secondary-color);
+    transition: color 0.5s ease-in-out;
 }
 
 #about .wrapper {
