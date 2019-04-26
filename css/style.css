@@ -26,7 +26,6 @@ body {
 .container {
     max-width: 100%;
     height: 100%;
-    /* CSS Smoth Scroll */
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
@@ -83,11 +82,6 @@ section p {
     border-radius: 4px 4px 0 0;
 }
 
-/* .projects img:hover {
-    transform: scale(1.03);
-    transition: all 0.5s ease-in-out;
-} */
-
 .project-item:hover {
     transform: scale(1.03);
     transition: all 0.5s ease-in;
@@ -96,6 +90,29 @@ section p {
 .project-item h2 {
     font-size: 1.5rem;
     color: var(--text-color);
+}
+
+/* ABOUT ME */
+
+.bio {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 5rem;
+    padding-top: 2vh;
+}
+
+.contact-info a {
+    color: var(--text-color);
+}
+
+#about .wrapper {
+    padding-bottom: 30vh;
 }
 
 /* Buttons */
@@ -165,11 +182,11 @@ section#contact {
     .project-item h2 {
         font-size: 1.2rem;
     }
-
 }
 
 @media screen and (max-height: 680px) {
-    #portfolio .wrapper {
+    #portfolio .wrapper,
+    #about .wrapper {
         padding-bottom: 10vh;
     }
 }
@@ -181,7 +198,8 @@ section#contact {
 }
 
 @media screen and (max-height: 500px) {
-    #portfolio .wrapper {
+    #portfolio .wrapper,
+    #about .wrapper {
         padding-bottom: 2vh;
     }
 }
@@ -211,4 +229,12 @@ section#contact {
         font-size: 0.8rem;
     }
 
+    .bio {
+        font-size: 0.8rem;
+    }
+    
+    .contact-info {
+        font-size: 2.5rem;
+        padding-top: 2vh;
+    }
 }
