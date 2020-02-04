@@ -170,6 +170,16 @@ section#about {
     background: url('https://source.unsplash.com/iIJrUoeRoCQ/1600x900') no-repeat center center/cover;
 }
 
+.logo {
+    height: 15px;
+    width: 20px;
+}
+
+.paragraph__logo {
+    display: inline-block;
+    background-color: #ffffff;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 680px) {
