@@ -79,7 +79,7 @@ section p {
 
 .projects img {
     width: 100%;
-    border-radius: 4px 4px 0 0;
+    /* border-radius: 4px 4px 0 0; */
 }
 
 .project-item:hover {
@@ -90,6 +90,17 @@ section p {
 .project-item h2 {
     font-size: 1.5rem;
     color: var(--text-color);
+}
+
+.stack {
+    background-color: #b0b0b0;
+    color: #000000;
+    border: 2px solid transparent;
+    display: block;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+    margin-top: 5px;
+    font-size: .9em;
 }
 
 /* ABOUT ME */
@@ -128,7 +139,7 @@ section p {
     display: block;
     margin: 0 auto;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 0 0 4px 4px;
     text-decoration: none;
 }
 
@@ -154,7 +165,6 @@ section p {
     color: var(--primary-color);
     margin-top: -8px;
     border-radius: 0 0 4px 4px;
-
 }
 
 /* Section Images */
@@ -196,12 +206,12 @@ section#about {
     }
 }
 
-@media screen and (max-height: 680px) {
+/* @media screen and (max-height: 680px) {
     #portfolio .wrapper,
     #about .wrapper {
         padding-bottom: 10vh;
     }
-}
+} */
 
 @media screen and (max-width: 680px) {
     #home .check-work {
@@ -209,12 +219,12 @@ section#about {
     }
 }
 
-@media screen and (max-height: 500px) {
+/* @media screen and (max-height: 500px) {
     #portfolio .wrapper,
     #about .wrapper {
         padding-bottom: 2vh;
     }
-}
+} */
 
 @media screen and (max-width: 500px) {
     section h1 {
