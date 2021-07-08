@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: gbronca.dev
+Token: e37eb278af090ec42257551fea19575e0a49d279c5628febf940afb5827ed236
